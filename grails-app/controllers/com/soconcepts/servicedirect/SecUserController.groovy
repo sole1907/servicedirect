@@ -21,7 +21,7 @@ class SecUserController {
     }
 
     /*def show(SecUser secUserInstance) {
-        respond secUserInstance
+    respond secUserInstance
     }*/
 
     @Secured(['IS_AUTHENTICATED_ANONYMOUSLY'])
@@ -132,6 +132,25 @@ class SecUserController {
         }
     }
 
+    @Secured(["ROLE_USER", "ROLE_SERVICE_PROVIDER", "ROLE_ADMIN"])
+    def changeProfilePassword() {
+        def secUserInstance = springSecurityService.currentUser
+        respond secUserInstance, view:'changePassword'
+    }
+  
+    @Transactional
+    @Secured(["ROLE_USER", "ROLE_SERVICE_PROVIDER", "ROLE_ADMIN"])
+    def updatePassword(SecUser secUserInstance) {
+        secUserInstance.save flush:true
+        request.withFormat {
+            form multipartForm {
+                flash.message = "Password Changed Successfully"//message(code: 'default.updated.message', args: [message(code: 'ServiceProvider.label', default: 'ServiceProvider'), serviceProviderInstance.id])
+                redirect action: "changeProfilePassword", method: "GET"
+            }
+            '*'{ respond secUserInstance, [status: OK] }
+        }
+    }
+  
     protected void notFound() {
         request.withFormat {
             form multipartForm {
