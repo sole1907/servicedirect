@@ -1,0 +1,62 @@
+#page-wrap {
+	width: 90%;
+	background: white;
+	padding: 20px 50px 20px 0px;
+	margin: 0;
+	min-height: 500px;
+	height: auto !important;
+	height: 500px;
+}
+
+#contact-area {
+	width: 600px;
+	margin-top: 25px;
+	float:left;
+}
+#contact-area2{
+	width: 280px;
+	margin-left:60px;
+	float:left;
+}
+
+#contact-area input, #contact-area textarea {
+	padding: 5px;
+	width: 471px;
+	font-family: Helvetica, sans-serif;
+	font-size: 1.4em;
+	margin: 0px 0px 10px 0px;
+	border: 2px solid #ccc;
+}
+
+#contact-area textarea {
+	height: 90px;
+}
+
+#contact-area textarea:focus, #contact-area input:focus {
+	border: 2px solid #900;
+}
+
+#contact-area input.submit-button {
+	width: 100px;
+	float: right;
+}
+
+label {
+	float: left;
+	text-align: right;
+	margin-right: 15px;
+	width: 100px;
+	padding-top: 5px;
+	font-size: 1.4em;
+}
+.login
+{
+background: #fff;
+padding-left:10px;
+box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
+}
+.new-contact
+{
+	margin-left:28px;
+	margin-top:10px;	
+}

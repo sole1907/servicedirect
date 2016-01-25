@@ -1,0 +1,226 @@
+@charset "utf-8";
+/* CSS Document 
+body.newDesignC #heroBanner .heroContainer .heroInner .btn.arrowBtn.search
+{
+        margin:0 auto;
+        max-width:600px;
+        width:100%;
+        overflow:hidden;
+        text-align:center;
+}*/
+
+.main .btn.search
+{
+    padding:auto;
+    background:#f4b90c;
+    background:-moz-linear-gradient(top,#f4b90c 0,#f3831f 100%);
+    background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#f4b90c),color-stop(100%,#f3831f));
+    background:-webkit-linear-gradient(top,#f4b90c 0,#f3831f 100%);
+    background:-o-linear-gradient(top,#f4b90c 0,#f3831f 100%);
+    background:-ms-linear-gradient(top,#f4b90c 0,#f3831f 100%);
+    background:linear-gradient(to bottom,#f4b90c 0,#f3831f 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f4b90c', endColorstr='#f3831f', GradientType=0);
+    -webkit-box-shadow:0 0 1px rgba(0,0,0,.15);
+    -moz-box-shadow:0 0 1px rgba(0,0,0,.15);
+    box-shadow:0 0 1px rgba(0,0,0,.15);
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    border-radius:8px;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    border:1px solid #f3831f;
+    text-decoration:none;
+    text-align:center;
+    color:#fff;
+    font-weight:700;
+    margin:10px 0 0 0;
+    font-size:16px;
+    height:40px;
+    width:100%;
+    max-width:480px;
+    position:relative;
+}
+
+body.newDesignC #heroBanner .heroContainer .heroInner .heroInnerLeft
+{
+    float:left;
+    max-width:560px;
+    min-width:475px;
+}
+body.newDesignC .whiteBoxL
+{
+    background:#FFF\9;
+    background:rgba(255,255,255,.8);
+    filter:none;
+    padding:0.05% 5% 5% 5%;
+    width:100%;
+    -webkit-border-radius:20px;
+    border-radius:20px;
+    -webkit-box-shadow:0 0 10px #bbb;
+    box-shadow:0 0 10px #bbb;
+    height:270px;
+    overflow:scroll;
+}
+.whiteBox select {
+    width: 100%;
+}
+.whiteBoxL::-webkit-scrollbar {
+    width: 2px;
+    height: 5px;
+    background:white;
+}
+.whiteBoxL::-webkit-scrollbar-track {
+    background-color: rgba(113,112,107,0.1);
+    -webkit-border-radius: 5px;
+}
+.whiteBoxL::-webkit-scrollbar-thumb:vertical {
+    background-color: rgba(0,0,0,.2);
+    -webkit-border-radius: 5px;
+}
+.whiteBoxL::-webkit-scrollbar-thumb:vertical:hover,
+.whiteBoxL::-webkit-scrollbar-thumb:horizontal:hover {
+    background:white;
+}
+.whiteBoxL::-webkit-scrollbar-thumb:horizontal {
+    background-color: rgba(0,0,0,.2);
+    -webkit-border-radius: 6px;
+    display:none;
+}
+.whiteBoxT{display:none;}
+@media screen and (max-width:1000px){
+    .search btn{
+        clear:both;
+    }
+    body.newDesignC #heroBanner .heroContainer .heroInner .heroInnerLeft
+    {
+        float:left;
+        max-width:10px;
+        min-width:175px;
+    }
+    body.newDesignC #heroBanner .heroContainer .heroInner h1{display:block;}
+    .whiteBox{ /*display:none;*/}
+    .whiteBoxL{ display:none;}
+    .whiteBoxT{ display:inline-block;}
+    .searchButton{float:left;}
+    body.newDesignC .whiteBoxT
+    {
+        background:#FFF\9;
+        background:rgba(255,255,255,.8);
+        filter:none;
+        padding:2% 5% 15% 5%;
+        width:30%;
+        -webkit-border-radius:20px;
+        border-radius:20px;
+        -webkit-box-shadow:0 0 10px #bbb;
+        box-shadow:0 0 10px #bbb;
+        height:80px;
+        margin-top:7%;
+        margin-left:10px;
+        overflow:none;
+    }
+    .whiteBoxT h1{float:left;}
+    .whiteBoxT h2{text-shadow:1px 1px 0 #fff;color:#000;font-size:50px\9;font-size:28px;font-weight:400;line-height:1.2em;margin:25px 0 10px}
+    .whiteBoxT form{float:left;clear:both;}
+}
+@media screen and (max-width:600px){
+    .whiteBoxL{ display:none;}
+    body.newDesignC .whiteBoxT
+    {
+        background:#FFF\9;
+        background:rgba(255,255,255,.8);
+        filter:none;
+        padding:2% 8% 20% 5%;
+        width:80%;
+        -webkit-border-radius:20px;
+        border-radius:20px;
+        -webkit-box-shadow:0 0 10px #bbb;
+        box-shadow:0 0 10px #bbb;
+        height:50px;
+        margin-top:2%;
+        margin-left:10px;
+        overflow:none;
+    }
+	body.newDesignC .whiteBoxT select{width:70%;}	
+	body.newDesignC .whiteBoxT table {padding:0; margin:0;}
+}
+
+/* ---------------- Ratings ----------------------------*/
+
+.rating {
+    float:left;
+}
+
+/* :not(:checked) is a filter, so that browsers that don’t support :checked don’t 
+   follow these rules. Every browser that supports :checked also supports :not(), so
+   it doesn’t make the test unnecessarily selective */
+.rating:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+    clip:rect(0,0,0,0);
+}
+
+.rating:not(:checked) > label {
+    float:right;
+    width:1em;
+    padding:0 .1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:200%;
+    line-height:1.2;
+    color:#ddd;
+    text-shadow:1px 1px #bbb, 2px 2px #666, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating:not(:checked) > label:before {
+    content: '★ ';
+}
+
+.rating > input:checked ~ label {
+    color: #f70;
+    text-shadow:1px 1px #c60, 2px 2px #940, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    color: gold;
+    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+    color: #ea0;
+    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating > label:active {
+    position:relative;
+    top:2px;
+    left:2px;
+}
+fieldset.rating
+{
+    border:none;
+    margin:0;
+}
+.findService
+{
+    margin:0;
+    line-height:1;
+}
+.service_provider
+{
+    border-bottom:1px dotted #096;
+}
+
+#al_topnav ul.al-navlist {
+    margin: 0 auto !important;
+    max-width: 1000px;
+    padding: 0;
+}
+
+h3{margin:0.2em 0.5em !important;}

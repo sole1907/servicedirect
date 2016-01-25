@@ -1,0 +1,214 @@
+@charset "utf-8";
+/* CSS Document */
+.login
+{
+    background: #fff;
+    padding-left:10px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
+}
+@media (min-width : 480px) {
+    .fields
+    {
+        margin:10px auto 0;
+        width:90%;
+    }
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+h3
+{
+    text-align:center;
+    line-height:1;
+    color:#001c54;
+}
+.subtitle
+{
+    text-align:center;
+    clear:both;
+}
+.clr
+{
+    clear:both;
+}
+.subtitle span
+{
+    /*background:#e5e8ee;*/
+    width:480px;
+    margin:0 auto;
+    padding-left:8px;
+    padding-right:8px;
+}.fields
+{
+    margin:10px auto 0;
+    padding-bottom:10px;
+    width:90%;
+}
+
+input
+{
+    width:100%;
+    height:35px;
+    margin:0 auto;
+    border:1px solid #f0f0f0;
+}
+
+textarea
+{
+    width:100%;
+    height:50px;
+    margin:0 auto;
+    border:1px solid #f0f0f0;
+    font-size: 12px;
+}
+
+select
+{
+    width:100%;
+    height:35px;
+    margin:0 auto;
+    border:1px solid #f0f0f0;
+    padding-top: 5px;
+}
+
+#registerForm\:subcategories
+{
+    width:100%;
+    height:105px;
+    margin:0 auto;
+    border:1px solid #f0f0f0;
+    padding-top: 5px;
+}
+
+#registeruserForm\:subcategories
+{
+    width:100%;
+    height:105px;
+    margin:0 auto;
+    border:1px solid #f0f0f0;
+    padding-top: 5px;
+}
+
+.each_input
+{
+    margin:3px auto 10px;
+}
+
+#wrapper {
+    background: #fff;
+    margin: -20px auto 0;
+    padding: 0;
+    padding-top:10px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
+}
+.gender
+{
+    width:50%;
+    float:left;
+}
+.each_input span
+{
+    margin:-5px 0 0 0;
+}
+.each_input input[type="radio"]
+{
+    float:left;
+    width:1.2em;
+    margin-top:-0.6em;
+}
+.each_label
+{
+    margin:5px auto;
+    font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size:0.9em;
+    font-weight:bold;
+    padding-left:8px;
+}
+.fields input[type="text"],input [type="number"],textarea
+{
+    font-style:italic;
+    padding-left:3px;
+}
+
+.download {
+    max-width:480px;
+    margin:0 auto;
+}
+.download input
+{
+    font-size:2.5em;
+    padding:9px;
+    background:#f4b90c;
+    background:-moz-linear-gradient(top,#f4b90c 0,#f3831f 100%);
+    background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#f4b90c),color-stop(100%,#f3831f));
+    background:-webkit-linear-gradient(top,#f4b90c 0,#f3831f 100%);
+    background:-o-linear-gradient(top,#f4b90c 0,#f3831f 100%);
+    background:-ms-linear-gradient(top,#f4b90c 0,#f3831f 100%);
+    background:linear-gradient(to bottom,#f4b90c 0,#f3831f 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f4b90c', endColorstr='#f3831f', GradientType=0);
+    -webkit-box-shadow:0 0 1px rgba(0,0,0,.15);
+    -moz-box-shadow:0 0 1px rgba(0,0,0,.15);
+    box-shadow:0 0 1px rgba(0,0,0,.15);
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    border-radius:4px;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    border:1px solid #f3831f;
+    text-decoration:none;
+    text-align:center;
+    line-height:50px;
+    height:70px;
+    color: #fff;
+}
+.download input:hover
+{
+    background:#f3831f;
+    background:-moz-linear-gradient(top,#f3831f 0,#f3831f 100%);
+    background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#f3831f),color-stop(100%,#f3831f));
+    background:-webkit-linear-gradient(top,#f3831f 0,#f3831f 100%);
+    background:-o-linear-gradient(top,#f3831f 0,#f3831f 100%);
+    background:-ms-linear-gradient(top,#f3831f 0,#f3831f 100%);
+    background:linear-gradient(to bottom,#f3831f 0,#f3831f 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f3831f', endColorstr='#f3831f', GradientType=0); 	 	text-decoration:none
+}
+
+.fields
+{
+    margin:10px auto 0;
+    padding-bottom:10px;
+    width:90%;
+}
+.each_label
+{
+    margin:5px auto;
+    font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size:0.9em;
+    font-weight:bold;
+    padding-left:8px;
+}
+@media (min-width : 480px) {
+    .fields
+    {
+        margin:10px auto 0;
+        width:90%;
+    }
+}

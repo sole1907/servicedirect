@@ -1,0 +1,5 @@
+#al_topnav ul.al-navlist {
+    margin: 0 auto !important;
+    max-width: 1000px;
+    padding: 0;
+}
